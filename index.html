@@ -3,15 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Juan Barros's Portfolio</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
     <header>
-
-    </header>
-    <main>
         <nav class="navbar is-fixed-top is-success" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="#top">Top</a>
@@ -21,6 +19,8 @@
                 <a class="navbar-item" href="#contact">Contact</a>
             </div>
         </nav>
+    </header>
+    <main>
         <section id="top" class="hero is-success is-fullheight">
             
             <div class="hero-body">
@@ -35,7 +35,8 @@
             </div>
             
         </section>
-        <section id="profile" class="section hero is-light is-fullheight">
+
+        <section id="profile" class="section hero is-dark is-fullheight">
             <div class="hero-body">
                 <div class="container">
                     <h1 class="title ">Profile</h1>
@@ -92,7 +93,8 @@
             </div>
             
         </section>
-        <section id="skills" class="section hero is-dark is-fullheight">
+
+        <section id="skills" class="section hero is-light is-fullheight">
             <div class="hero-body">
                 <div class="container">
                     <h1 class="title">Skills</h1>
@@ -100,24 +102,24 @@
                         <div class="tags column is-10 is-offset-1">
                             <span class="tag is-info is-large">Java</span>
                             <span class="tag is-danger is-large">Python<i class="fab fa-python"></i></span>
-                            <span class="tag is-light is-large"></i>Javascript</span>
+                            <span class="tag is-dark is-large"></i>Javascript</span>
                             <span class="tag is-primary is-large">HTML<i class="fab fa-html5"></i></span>
                             <span class="tag is-info is-large">CSS<i class="fab fa-css3"></i></span>
                             <span class="tag is-success is-large">C / C++</span>
                             <span class="tag is-warning is-large">TypeScript</span>
                             <span class="tag is-danger is-large">Haskell</span>
-                            <span class="tag is-light is-large">Prolog</span>
+                            <span class="tag is-dark is-large">Prolog</span>
                             <span class="tag is-info is-large">Pascal</span>
                             <span class="tag is-primary is-medium">Spring Boot</span>
                             <span class="tag is-success is-medium">Angular</span>
                             <span class="tag is-warning is-medium">Android</span>
                             <span class="tag is-danger is-medium">NodeJS</span>
-                            <span class="tag is-light is-medium">SQL</span>
+                            <span class="tag is-dark is-medium">SQL</span>
                             <span class="tag is-primary is-medium">Alloy</span>
                             <span class="tag is-info is-medium">Bulma</span>
                             <span class="tag is-link is-medium">LaTeX</span>
                             <span class="tag is-success is-medium">D3</span>
-                            <span class="tag is-waning is-medium">Bootstrap</span>
+                            <span class="tag is-warning is-medium">Bootstrap</span>
                             <span class="tag is-danger is-medium">AppInventor</span>  
                         </div>
                     </div>
@@ -128,15 +130,92 @@
             
         </section>
 
-        <section id="projects">
+        <section id="projects" class="section hero is-fullheight">
             <div class="hero-body">
                 <div class="container">
                     <h1 class="title">Projects</h1>
+                    <div class="tile is-ancestor">
+                        <div class="tile is-vertical is-8">
+                            <div class="tile">
+                            <div class="tile is-parent is-vertical">
+                                <a href="https://github.com/JuanBarros2/Calango" target="_blank" class="tile is-child notification is-primary">
+                                    <p class="title">Calango</p>
+                                    <p class="subtitle">A tamagotchi with Brazilian theme</p>                  
+                                    <div class="content tags">
+                                        <span class="tag">Haskell</span>
+                                        <span class="tag">Prolog</span>
+                                        <span class="tag">C++</span>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/JuanBarros2/TheJukebox" target="_blank" class="tile is-child notification is-warning">
+                                    <p class="title">The Jukebox</p>
+                                    <p class="subtitle">System in development that records artists, songs and creates playlists.</p>  
+                                    <div class="content tags">
+                                        <span class="tag">Javascript</span>
+                                        <span class="tag">Angular</span>
+                                        <span class="tag">HTML</span>
+                                        <span class="tag">Boostrap</span>
+                                        <span class="tag">Spring Boot</span>
+                                    </div>
+                                </a>
+                                    
+                        </div>
+
+                        <div class="tile is-parent">
+                            <a href="https://juanbarros2.github.io/BlogVisualizacao/" target="_blank" class="tile is-child notification is-info">
+                                <p class="title">Blog</p>
+                                <p class="subtitle">My personal blog for displaying data visualization</p>
+                                <div class="content">
+                                    <p>Blog created with the tool <i>Hugo</i> and contains some visualizations that I created with open API data.</p>
+                                    <div class="tags">
+                                        <span class="tag">Javascript</span>
+                                        <span class="tag">D3</span>
+                                        <span class="tag">HTML</span>
+                                        <span class="tag">CSS</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                    <a href="https://estoque-facil-si1.herokuapp.com/" target="_blank" class="tile is-child notification is-danger">
+                        <p class="title">Estoque Facil</p>
+                        <p class="subtitle">Sample application that helps management product inventory</p>
+                        <div class="content">
+                            <p>The system allows administrator authentication for stock control with price setting, lot generation and critical inventory status notification. The default user is <b>admin@admin.com</b> and password <b>admin</b>.</p>
+                            <div class="tags">
+                                <span class="tag">Javascript</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">Spring Boot</span>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
                 </div>
+                <div class="tile is-parent">
+                    <a href="https://play.google.com/store/apps/details?id=br.edu.ladoss.simpifladoss&hl=pt_BR"class="tile is-child notification is-success">
+                    <div class="content">
+                        <p class="title">Sésamo Ingressos</p>
+                        <p class="subtitle">Application that assists in the management of event tickets</p>
+                        <div class="content">
+                            <figure class="image">
+                                <img src="images/sessamo.png" class="sessamo">
+                            </figure>
+                            <div class="tags">
+                                <span class="tag">Android</span>
+                                <span class="tag">Java</span>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                </div>
+
             </div>
         </section>
         <section id="contact">
-
         </section>
     </main>
     <footer>
